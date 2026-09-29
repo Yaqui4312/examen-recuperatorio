@@ -2,13 +2,30 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Directorio de Contactos</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <h1>Examen Recuperatorio</h1>
-    <!-- Escribe aquí todo tu HTML -->
+    <main class="tarjeta">
+      <h1>Directorio de Contactos</h1>
 
-    <script src="script.js"></script>
+      <section class="formulario">
+        <input type="text" id="nombre" placeholder="Nombre" />
+        <input type="tel" id="telefono" placeholder="Teléfono" />
+        <button id="btn-agregar">Agregar</button>
+      </section>
+
+      <input type="text" id="buscador" class="buscador" placeholder="Buscar contacto por nombre..." />
+
+      <ul id="lista-contactos" class="lista"></ul>
+      <p id="mensaje-vacio" class="vacio">Todavía no agregaste contactos.</p>
+
+      <footer class="pie">
+        <span id="contador">Contactos: 0</span>
+      </footer>
+    </main>
+
+    <script src="contactos.js"></script>
   </body>
 </html>

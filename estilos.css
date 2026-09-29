@@ -1,0 +1,125 @@
+/* ===== Base ===== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 34px 16px;
+  background: #f4f6f3;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+.tarjeta {
+  max-width: 550px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  color: #1c1c1c;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+  border-color: #2f6f5e;
+  box-shadow: 0 0 0 3px rgba(47, 111, 94, 0.15);
+}
+
+#btn-agregar {
+  align-self: flex-start;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: #2f6f5e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#btn-agregar:hover { background: #245648; }
+
+/* ===== Contactos ===== */
+.lista {
+  list-style: none;
+  margin: 24px 0 0;
+  padding: 0;
+}
+
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.contacto .datos {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contacto .nombre {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contacto .telefono {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn-eliminar {
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #b3372f;
+  background: #fff;
+  border: 1px solid #e3b5b1;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-eliminar:hover { background: #fbeceb; }
+
+.vacio {
+  text-align: center;
+  color: #666;
+  margin: 32px 0;
+}
+
+/* ===== Pie ===== */
+.pie {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-weight: bold;
+  font-size: 15px;
+  color: #666;
+}
